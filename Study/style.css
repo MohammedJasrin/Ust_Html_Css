@@ -1,0 +1,207 @@
+/* Variables (converted into static CSS values) */
+
+.intro {}
+
+body {
+  height: 100vh;
+  animation: intro_box 1s 1s forwards;
+  opacity: 0;
+  perspective-origin: 50% -10%;
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+  perspective: 800px;
+  background: radial-gradient(ellipse at top left, rgba(222, 11, 70, 0.26) -160%, rgba(255, 255, 255, 0) 103%), -webkit-radial-gradient(center, ellipse cover, #0C1019 0%, #0B0B0E 100%);
+  overflow: hidden;
+}
+
+.grain {
+  transform: scale(1) !important;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/overlay.png");
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  top: 0;
+  opacity: 1;
+  bottom: 0;
+}
+
+.center {
+  left: 0;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  margin: auto;
+  transform: translateY(-50%);
+}
+
+.core {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #de0b46;
+  box-shadow: 0px 0px 70px 20px #de0b46;
+}
+
+.outer_one,
+.outer_two,
+.outer_three,
+.outer_four,
+.outer_five {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+}
+
+.outer_one {
+  transform: translateX(-120px);
+}
+
+.outer_one__piece {
+  width: 10px;
+  height: 30px;
+  background: #de0b46;
+  box-shadow: 0px 0px 20px 0px #de0b46;
+  transform-origin: 120px 0px;
+  border-radius: 2px;
+  position: absolute;
+  /* Apply rotation for each piece using nth-of-type */
+}
+
+.outer_two {
+  transform: translateX(-290px);
+}
+
+.outer_two__piece {
+  width: 28px;
+  height: 5px;
+  background: #de0b46;
+  box-shadow: 0px 0px 20px 0px #de0b46;
+  transform-origin: 290px 0px;
+  border-radius: 2px;
+  position: absolute;
+  animation: fade 5s infinite;
+}
+
+.outer_three {
+  transform: translateX(-440px);
+}
+
+.outer_three__piece {
+  width: 55px;
+  height: 5px;
+  background: #55E2F9;
+  box-shadow: 0px 0px 20px 0px #55E2F9;
+  transform-origin: 440px 0px;
+  border-radius: 2px;
+  position: absolute;
+  animation: fade 7s infinite;
+}
+
+.outer_four {
+  transform: translateX(-440px);
+}
+
+.outer_four__piece {
+  width: 6px;
+  height: 5px;
+  background: #de0b46;
+  box-shadow: 0px 0px 20px 0px #de0b46;
+  transform-origin: 440px 0px;
+  border-radius: 2px;
+  position: absolute;
+  animation: fade 7s infinite;
+}
+
+.outer_five {
+  transform: translateX(-410px);
+}
+
+.outer_five__piece {
+  width: 6px;
+  height: 5px;
+  background: #de0b46;
+  box-shadow: 0px 0px 20px 0px #de0b46;
+  transform-origin: 410px 0px;
+  border-radius: 2px;
+  position: absolute;
+  animation: fade 7s infinite;
+}
+
+.pieces {
+  transform: translateX(540px);
+  position: absolute;
+}
+
+.future_ui__piece {
+  border: 3px solid #DE0B46;
+  position: absolute;
+  font-weight: 900;
+  padding: 30px;
+  font-size: 30px;
+  box-shadow: 0px 0px 25px rgba(222, 11, 70, 0.27);
+  transform-style: preserve-3d;
+  transition: all 1s .1s;
+  color: white;
+  text-align: left;
+  border-radius: 100px !important;
+  background: transparent;
+  box-shadow: 0px 0px 25px rgba(222, 11, 70, 0.27);
+  transform-origin: -540px 0px;
+  width: 220px;
+  height: 20px;
+}
+
+.future_ui__piece:hover {
+  cursor: pointer;
+  color: white;
+  animation: blink .4s .4s;
+  background: #DE0B46;
+  transform: rotateZ(-55deg) translateX(20px);
+  box-shadow: 0px 0px 55px rgba(222, 11, 70, 0.77);
+}
+
+.future_ui__piece span {
+  position: absolute;
+  top: 12px;
+  width: 270px;
+  text-shadow: 0px 13px 0px rgba(30, 30, 30, 0.4);
+  left: 240px;
+  transform: translateZ(100px) rotateZ(0deg);
+}
+
+.future_ui__piece .line {
+  width: 0px;
+  height: 5px;
+  left: -547px;
+  transform: rotateZ(4deg);
+  top: 17px;
+  background: #DE0B46;
+  position: absolute;
+  opacity: 0;
+}
+
+.future_ui__piece .tip {
+  font-size: 17px;
+  position: absolute;
+  left: 105%;
+  opacity: 0;
+  transition: all .2s .3s;
+  font-weight: 400;
+  color: #85DFE4;
+  width: 100%;
+  top: 70px;
+}
+
+.future_ui__piece.blank {
+  opacity: 0.1;
+  background: none;
+  pointer-events: none;
+  box-shadow: 0px 0px
+}

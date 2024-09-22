@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            width: 97vw;
+            height: 97vh;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+        
+    </style>
+    <script>
+        // var data =[3,4,5,6,7,8,9];
+        // var last=data.pop()
+        // data.shift()
+        // data.push(10)
+        // data.unshift(2)
+        // data.pop()
+        // console.log(data);
+        // function sumof(){
+        //     var total= 0;
+        //     for (let i in data){
+        //         total = total+data[i];
+        //     }
+        //     console.log(total)
+        // }
+        // sumof()
+        // console.log(ans)
+        // const sum1 = () =>{
+        //     var ans=0;
+        //     data.forEach(element => {
+        //         ans=element+ans
+        //     });
+        //     console.log(ans)
+        // }   
+        
+        // sum1()
+        // console.log(ans)
+        // function factorial(n){
+        //     var i = 1;
+        //     var fact = 1;
+        //     while(i<=n){
+        //         fact*=i;
+        //         i++;
+        //     }
+        //     return fact;
+        // }        
+        var n=parseInt(prompt("Enter the number"))
+        // var fact=factorial(n)
+        // alert("The factorial of the entered numeber is "+fact)
+        // var num=1;
+        //     for (let i=1;i<11;i++){
+        //         for (let j=1;j<11;j++){
+        //             document.writeln(`<p>`+j*i+`</p>`)
+        //             // num=num+1;
+        //         }
+        //         document.writeln(`<br>`)
+        //     }
+        
+        // createtable(3,3)
+        // document.writeln()
+        // function tablecreation(){
+        
+        // // }
+        // function tablecreation(){
+        //     document.writeln(`<table border="3">`)
+        //     for (var i =1;i<11;i++){
+        //         document.writeln(`<tr>`);                               // table creation
+        //         for (var j=1;j<11;j++){
+        //             document.writeln(`<td>`+i*j+`</td>`)
+        //         }
+        //         document.writeln(`</tr>`);
+        //     }
+        //     document.writeln(`</table>`)
+        // }
+        // const data1 = [3,6,9,5,3,12,3,66];
+
+ 
+        // const filteredData = data1.filter((n)=> n<10);
+        // console.log(filteredData)
+        
+        // const mappedData = data1.map((n)=>n*2);
+        // console.log(mappedData)
+                                                                       //Mapping and accumulators
+        // const members = ["john","Joel","Sam","Nancy"];
+        // const nominees = members.map((member)=>member+" joined the contest")
+        // console.log(nominees)
+        
+        // const nums = [2,4,6,8];
+        // const sum = nums.reduce((accumulator,value)=>{
+        //     console.log(accumulator,value);
+        //     return accumulator+=value
+        // })
+        // console.log(sum)
+        // const square = function (n){
+        //     return n*n
+        // }
+        // let s  = square;
+        // var result = s(5)
+        // console.log(result)
+        // const square2 = (n) => {
+        //     return n*n;
+        // }
+        // var r = square2(9);
+        // alert(r);                                               Usage of =>
+        // const ans=function(n,m){
+        //     return n+m
+        // }
+        // const val=ans(5,3)
+        // // alert(val)
+        // const an=(n,m) => {
+        //     return n+m;
+        // }
+        // const va=ans(5,5)
+        // alert(va)
+        // const isEven = (n) =>{                                  Function as parameter
+        //     return n%2==0 
+        // }
+        // const checker=(functionname,num) =>{
+        //     const ans=functionname(num)
+        //     console.log(`${num} is ${ans}`)
+        // }
+
+        // checker(isEven,22)
+
+                                                                // Objects in Javascript
+        // var movie={name:"Titanic",year:1394};
+        // console.log(movie.name)
+        // console.log(movie.year)
+        // movie.hero="Jack"
+        // console.log(movie.hero)
+                                                                // Json Objects
+        // var data = {
+        //     "info":[
+        //         {"Company":"Google","Location":"Sanfransisco","County":"USA"},
+        //         {"Company":"Infosys","Location":"Kerala","Country":"India"},
+        //         {"Company":"TCS","Location":"Powai","Country":"India"}
+        //     ]
+        // }
+        // console.log(data.info[1].Location)
+        // console.log(data.info[0])
+        // data.info[0].Country="India"
+        // console.log(data.info[0])
+        // data.info.push({"Company":"UST","Location":"Kerala","Country":"India"})
+        // console.log(data.info[3])
+        // var data = [
+        //     {
+        //         "name": "Alice Johnson",
+        //         "age": 29,
+        //         "location": "US",
+        //         "continent": "North America",
+        //         "experience": 5
+        //     },
+        //     {
+        //         "name": "Ravi Patel",
+        //         "age": 34,
+        //         "location": "IND",
+        //         "continent": "Asia",
+        //         "experience": 8
+        //     },
+        //     {
+        //         "name": "Emma Brown",
+        //         "age": 26,
+        //         "location": "US",
+        //         "continent": "North America",
+        //         "experience": 3
+        //     },
+        //     {
+        //         "name": "Sanjay Kumar",
+        //         "age": 42,
+        //         "location": "IND",
+        //         "continent": "Asia",
+        //         "experience": 15
+        //     },
+        //     {
+        //         "name": "Liam Smith",
+        //         "age": 31,
+        //         "location": "US",
+        //         "continent": "North America",
+        //         "experience": 7
+        //     },
+        //     {
+        //         "name": "Priya Sharma",
+        //         "age": 28,
+        //         "location": "IND",
+        //         "continent": "Asia",
+        //         "experience": 4
+        //     },
+        //     {
+        //         "name": "Olivia Davis",
+        //         "age": 37,
+        //         "location": "US",
+        //         "continent": "North America",
+        //         "experience": 10
+        //     },
+        //     {
+        //         "name": "Anil Gupta",
+        //         "age": 30,
+        //         "location": "IND",
+        //         "continent": "Asia",
+        //         "experience": 6
+        //     },
+        //     {
+        //         "name": "Sophia Wilson",
+        //         "age": 25,
+        //         "location": "US",
+        //         "continent": "North America",
+        //         "experience": 2
+        //     },
+        //     {
+        //         "name": "Neha Singh",
+        //         "age": 33,
+        //         "location": "IND",
+        //         "continent": "Asia",
+        //         "experience": 9
+        //     }
+        // ]
+        // var ans=[{}]
+        // data.forEach(element => { 
+        //     if (element.age <30){
+        //         ans.push(element)
+        //     }
+        // });
+        // function test(employee){
+        //     if(employee.age>31){
+        //         return true;
+        //     }
+        // }
+        // console.log(ans)
+        // var morethan30 = data.filter((emplo)=>emplo.age>30)
+        // var morethan31 = data.filter(test)
+        // console.log(morethan30)
+        // console.log(morethan31)
+        // var expmorthan5 = data.filter((emplo)=>emplo.experience>5)
+        function SayGreeting(){
+            alert("OLLA Amigos")
+        }
+        function ShowSeason(){
+            var month = new Date().getMonth();
+            if (month>=6 && month < 9){
+                alert("Monsoon Season")
+            }
+        }
+        function green(){
+            document.getElementById("green").style.backgroundColor="green"
+            document.getElementById("green").style.color="white"
+            document.getElementById("green").style.height="200px"
+
+        }
+        function blue(){
+            document.getElementById("blue").style.backgroundColor="blue"
+            document.getElementById("blue").style.color="white"
+            document.getElementById("blue").style.fontWeight="bolder"
+            document.getElementById("blue").style.height="200px"
+        }
+        function validate(){
+            alert("validating ...........")
+            var un=document.getElementsByName("username")[0].value;
+            var ps=document.getElementsByName("password")[0].value;
+            alert(un + " " + ps)
+            if(un.length > 8 && ps.length>8){
+                alert("true")
+                return true
+            }
+            else {
+                alert("false")
+                return false
+            }
+        }
+        function goto(){
+            window.location.href="www.amazon.in"
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post" onsubmit="return validate()">
+        <fieldset>
+        <legend>Log in</legend>
+        <!-- <input type="button" value="greet" onclick="SayGreeting()">
+        <input type="button" value="season" onclick="ShowSeason()">
+        <input type="button" value="green" onclick="green()">
+        <input type="button" value="blue" onclick="blue()">     -->
+        <label for="username">username</label>
+        <input type="text" name="username" ><br>
+        <label for="Password">password</label> 
+        <input type="password" name="password"> <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear" id="">
+    </fieldset>
+    </form>
+    <div id="green">
+        Hello from green <br><br><br>
+    </div>
+    <div id="blue">
+        Hello from blue <br><br><br>
+    </div>
+</body>
+</html>

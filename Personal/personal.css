@@ -1,0 +1,29 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.left{
+    background-color: gray;
+    width: 20vw;
+    height: 100vh;
+}
+
+.middle{
+    background-color: whitesmoke;
+    width: 70vw;
+    height: 100vh;
+}
+
+.right{
+    background-color: rgb(228, 214, 196);
+    width: 10vw;
+    height: 100vh;
+}
+
+.buttons{
+    
+    color: gray;
+}
